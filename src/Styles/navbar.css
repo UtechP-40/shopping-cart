@@ -1,0 +1,26 @@
+.navbar {
+  /* background-color: #333; */
+  background: #000000;
+
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  div {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+  }
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}

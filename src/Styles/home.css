@@ -1,0 +1,31 @@
+.cont {
+    /* width: 80%; */
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.maincont{
+    margin: auto;
+}
+.card{
+    border: 1px solid #000;
+    width: 340px;
+height: 550px;
+top: 250px;
+left: 149px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+
+}
+img{
+    width: 100%;
+   
+}
