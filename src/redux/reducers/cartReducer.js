@@ -1,8 +1,8 @@
 import { ADD_TO_CART, REMOVE_FROM_CART, UPDATE_CART_ITEM, CLEAR_CART } from '../actions/actionTypes';
 
 const initialState = {
-  items: [], // Array of cart items
-  total: 0,  // Total cost of items in the cart
+  items: [], 
+  total: 0,  
 };
 
 const cartReducer = (state = initialState, action) => {
@@ -11,7 +11,6 @@ const cartReducer = (state = initialState, action) => {
       const existingItem = state.items.find((item) => item.id === action.payload.id);
 
       if (existingItem) {
-        // If item already exists, increase its quantity
         const updatedItems = state.items.map((item) =>
           item.id === action.payload.id
             ? { ...item, quantity: item.quantity + action.payload.quantity }
@@ -23,8 +22,6 @@ const cartReducer = (state = initialState, action) => {
           total: state.total + action.payload.price * action.payload.quantity,
         };
       }
-
-      // Add new item
       return {
         ...state,
         items: [...state.items, action.payload],
