@@ -258,6 +258,7 @@ hr.divider {
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    
   }
   
   .checkout-button:hover {
@@ -266,4 +267,8 @@ hr.divider {
   
   .checkout-button:active {
     background-color: #e0e0e0;
+  }
+
+  h1{
+    text-align:center;
   }
